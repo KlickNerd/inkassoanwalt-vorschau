@@ -149,14 +149,6 @@
         },
         {
           "@type": "Question",
-          "name": "Ab welcher Forderungshöhe lohnt sich ein Inkassoanwalt?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Eine feste Untergrenze gibt es nicht. Entscheidend sind Höhe der Forderung, Zahlungsfähigkeit des Kunden und ob er die Forderung bestreitet. Das klären wir in der Ersteinschätzung."
-          }
-        },
-        {
-          "@type": "Question",
           "name": "Wie lange dauert es, bis ich mein Geld bekomme?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -173,34 +165,10 @@
         },
         {
           "@type": "Question",
-          "name": "Wann verjährt meine Forderung?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "In der Regel nach drei Jahren, gerechnet ab dem Ende des Jahres, in dem sie entstanden ist (§§ 195, 199 BGB). Eine Mahnung allein hält die Verjährung nicht auf."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Was passiert, wenn mein Kunde insolvent ist?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Dann melden wir Ihre Forderung beim Insolvenzverwalter an und prüfen, ob Sie Sicherheiten wie einen Eigentumsvorbehalt haben."
-          }
-        },
-        {
-          "@type": "Question",
           "name": "Übernehmen Sie auch Forderungen gegen Kunden in Österreich?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Ja. Das ist unser Schwerpunkt. Wir holen den Titel und beantragen die Exekution in Österreich. Mehr auf der Seite Inkasso Österreich."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Welche Unterlagen brauchen Sie?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Rechnung, Vertrag oder Auftragsbestätigung, Mahnungen und den Schriftverkehr mit dem Kunden. Sie laden alles im Formular hoch."
           }
         }
       ]
@@ -639,6 +607,46 @@ p.kicker-klein{font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;fo
 .branche-text strong{font-family:var(--serif);font-weight:500;font-size:24px;color:var(--navy)}
 .branche-text>span:not(.ort-land):not(.karte-mehr){font-size:15.5px;line-height:1.6;color:#3d4655;flex:1}
 .cta-band:first-child{padding-top:84px}
+/* Startseite Runde 3 */
+.jan-name{font-family:var(--serif)!important;font-style:italic;font-weight:400;font-size:20px!important;color:var(--gold-text)!important;margin:0 0 22px!important;line-height:1.3}
+.mosaik.mosaik2{grid-template-columns:1fr}@media(min-width:768px){.mosaik.mosaik2{grid-template-columns:repeat(3,1fr);grid-auto-rows:minmax(250px,auto)}}
+.mosaik2 .kachel.kachel-kopf{overflow:visible;min-height:0;background:transparent}.kachel-kopf p.kicker{color:var(--gold-text);font-size:12.5px;line-height:1.4;margin:0 0 14px}
+.kachel-kopf{background:transparent!important;color:var(--text);padding:8px 24px 8px 0;min-height:0}.kachel-kopf:after{display:none}
+.kachel-kopf h2{font-size:clamp(26px,2.6vw,34px);margin:0 0 12px}.kachel-kopf p{font-size:16px;line-height:1.65;color:#3d4655;margin:0 0 14px}
+@media(min-width:768px){.mosaik2 .kachel-gross{grid-column:2/4;grid-row:1/3}}
+.faelle-zeile{margin-top:64px;display:grid;gap:24px}@media(min-width:960px){.faelle-zeile{grid-template-columns:1fr 2.4fr;gap:64px;align-items:start}}
+.faelle-zeile h3{font-size:clamp(22px,2.2vw,28px);margin:0}
+.faelle-zeile .zitate{margin:0}@media(min-width:900px){.faelle-zeile .zitate{column-gap:48px}}
+.faelle-zeile .zitate p{font-size:18.5px}
+.mitte-kopf{max-width:760px;margin:0 auto 48px;text-align:center}.mitte-kopf p.kicker{text-align:center}
+.kd-raster{display:grid;gap:48px}@media(min-width:960px){.kd-raster{grid-template-columns:1.3fr 1fr;gap:0}.kd-kosten{padding-right:56px}.kd-dauer{padding-left:56px;border-left:1px solid #d9d2c5}}
+.kd-raster h3{font-size:22px;margin:0 0 18px}
+.kd-tab{width:100%;border-collapse:collapse}
+.kd-tab th{text-align:left;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-text);font-weight:600;padding:0 12px 10px 0;border-bottom:1px solid var(--navy)}
+.kd-tab tbody th{font-family:var(--serif);font-size:26px;letter-spacing:0;text-transform:none;color:var(--navy);font-weight:400;padding:16px 12px 16px 0;border-bottom:1px solid #d9d2c5}
+.kd-tab td{padding:16px 12px 16px 0;border-bottom:1px solid #d9d2c5;font-size:15px}
+.kd-wer{font-family:var(--serif);font-style:italic;font-size:18px;color:var(--gold-text);margin:18px 0 8px}
+.kd-dauer>p{font-size:16px;line-height:1.7;color:#3d4655;margin:0 0 18px}
+.kd-liste{list-style:none;margin:0;padding:0;border-top:1px solid var(--navy)}
+.kd-liste li{display:grid;gap:4px;padding:14px 0;border-bottom:1px solid #d9d2c5;font-size:15px;color:#4a5260}
+.kd-liste strong{font-family:var(--serif);font-weight:400;font-size:18px;color:var(--navy)}
+@media(max-width:600px){.kd-tab thead{display:none}.kd-tab tr{display:block;padding:12px 0;border-bottom:1px solid #d9d2c5}
+.kd-tab tbody th{display:block;border:0;padding:0 0 6px}.kd-tab td{display:flex;justify-content:space-between;border:0;padding:3px 0}
+.kd-tab td:before{content:attr(data-label);color:#6b6458;font-size:13.5px}}
+.seit-raster{display:grid;gap:36px;align-items:start}@media(min-width:960px){.seit-raster{grid-template-columns:1fr 1.5fr;gap:72px}}
+.leise-h2{font-size:15px;letter-spacing:.16em;text-transform:uppercase;font-family:var(--sans);font-weight:600;color:var(--gold-text);margin:0 0 32px}
+#beispiele .klein-hinweis{margin-top:28px}
+.faq-kopf{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:12px 32px;margin-bottom:28px;padding-bottom:20px;border-bottom:1px solid var(--navy)}
+.faq-kopf h2{margin:0}
+.fa-raster{display:grid;gap:0 64px}@media(min-width:900px){.fa-raster{grid-template-columns:1fr 1fr}}
+.fa{padding:22px 0;border-bottom:1px solid #d9d2c5}
+.fa h3{font-size:20px;margin:0 0 8px}.fa p{margin:0;font-size:16px;line-height:1.7;color:#3d4655}
+.rat-zeile{margin:36px 0 0;font-size:16px;line-height:1.9;color:#3d4655}.rat-zeile strong{color:var(--navy)}
+.finale-schritte{list-style:none;margin:56px 0 0;padding:28px 0 0;border-top:1px solid rgba(255,255,255,.16);display:flex;flex-wrap:wrap;gap:14px 40px}
+.finale-schritte li{display:flex;gap:10px;align-items:baseline;font-family:var(--serif);font-size:19px;color:#fff}
+.finale-schritte span{font-style:italic;color:#c9a96e;font-size:16px}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
 .hero-portrait{background:#fff;padding-bottom:0}
 .hero-portrait .hero-raster{align-items:stretch}@media(min-width:960px){.hero-portrait .hero-raster{grid-template-columns:1fr 1.25fr;gap:80px}}
 .hero-portrait .hero-bild{order:-1;align-self:stretch;background:var(--creme)}
@@ -781,7 +789,20 @@ p.kicker-klein{font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;fo
     <span><span class="sterne"><svg class="stern" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.5 2.3a.5.5 0 0 1 1 0l2.3 4.7a2 2 0 0 0 1.6 1.2l5.2.7a.5.5 0 0 1 .3.9l-3.8 3.7a2 2 0 0 0-.6 1.9l.9 5.1a.5.5 0 0 1-.8.6l-4.6-2.4a2 2 0 0 0-2 0L6.4 21a.5.5 0 0 1-.8-.6l.9-5.1a2 2 0 0 0-.6-1.9L2.2 9.8a.5.5 0 0 1 .3-.9l5.1-.7a2 2 0 0 0 1.6-1.2z"/></svg><svg class="stern" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.5 2.3a.5.5 0 0 1 1 0l2.3 4.7a2 2 0 0 0 1.6 1.2l5.2.7a.5.5 0 0 1 .3.9l-3.8 3.7a2 2 0 0 0-.6 1.9l.9 5.1a.5.5 0 0 1-.8.6l-4.6-2.4a2 2 0 0 0-2 0L6.4 21a.5.5 0 0 1-.8-.6l.9-5.1a2 2 0 0 0-.6-1.9L2.2 9.8a.5.5 0 0 1 .3-.9l5.1-.7a2 2 0 0 0 1.6-1.2z"/></svg><svg class="stern" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.5 2.3a.5.5 0 0 1 1 0l2.3 4.7a2 2 0 0 0 1.6 1.2l5.2.7a.5.5 0 0 1 .3.9l-3.8 3.7a2 2 0 0 0-.6 1.9l.9 5.1a.5.5 0 0 1-.8.6l-4.6-2.4a2 2 0 0 0-2 0L6.4 21a.5.5 0 0 1-.8-.6l.9-5.1a2 2 0 0 0-.6-1.9L2.2 9.8a.5.5 0 0 1 .3-.9l5.1-.7a2 2 0 0 0 1.6-1.2z"/></svg><svg class="stern" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.5 2.3a.5.5 0 0 1 1 0l2.3 4.7a2 2 0 0 0 1.6 1.2l5.2.7a.5.5 0 0 1 .3.9l-3.8 3.7a2 2 0 0 0-.6 1.9l.9 5.1a.5.5 0 0 1-.8.6l-4.6-2.4a2 2 0 0 0-2 0L6.4 21a.5.5 0 0 1-.8-.6l.9-5.1a2 2 0 0 0-.6-1.9L2.2 9.8a.5.5 0 0 1 .3-.9l5.1-.7a2 2 0 0 0 1.6-1.2z"/></svg><svg class="stern" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.5 2.3a.5.5 0 0 1 1 0l2.3 4.7a2 2 0 0 0 1.6 1.2l5.2.7a.5.5 0 0 1 .3.9l-3.8 3.7a2 2 0 0 0-.6 1.9l.9 5.1a.5.5 0 0 1-.8.6l-4.6-2.4a2 2 0 0 0-2 0L6.4 21a.5.5 0 0 1-.8-.6l.9-5.1a2 2 0 0 0-.6-1.9L2.2 9.8a.5.5 0 0 1 .3-.9l5.1-.7a2 2 0 0 0 1.6-1.2z"/></svg></span> 4,8 bei 314 Bewertungen auf anwalt.de</span><span>182 Google-Bewertungen</span><span>Seit 2008 zugelassen</span><span>Top-Anwalt FAZ 2025 · Focus 2025</span>
   </div>
 </section>
-<section class="weiss abschnitt" id="zwei-laender">
+<section class="weiss abschnitt" id="anwalt">
+  <div class="wrap jan-raster">
+    <figure class="jan-bild"><img src="https://inkassoanwalt.net/wp-content/uploads/rechtsanwalt-jan-wasserfall-684x1024.jpg" alt="Rechtsanwalt Jan Waßerfall" width="684" height="1024" loading="lazy"></figure>
+    <div class="jan-text">
+      <blockquote class="jan-zitat">Ich vertrete nur die Seite, die auf ihr Geld wartet.</blockquote>
+      <h2 class="jan-name">Ihr Inkassoanwalt: Rechtsanwalt Jan Waßerfall</h2>
+      <ul class="jan-fakten"><li>Rechtsanwalt seit 2008, Rechtsanwaltskammer Berlin</li><li>Tätig in Deutschland und Österreich</li><li>Auftrag, Unterlagen und Abstimmung vollständig digital</li></ul>
+      <p><a class="textlink" href="jan-wasserfall.html">Mehr über Jan Waßerfall <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+      <p class="klein-hinweis">Zitat sinngemäß aus der Autorenseite. <span class="ph">[Von Jan freigeben lassen]</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="creme abschnitt" id="zwei-laender">
   <div class="wrap">
     <div class="laender-kopf"><p class="kicker">Unsere Besonderheit</p><h2>Inkassoanwalt für Deutschland und Österreich</h2><p class="antwort">Ein Inkassoanwalt ist ein Rechtsanwalt, der offene Forderungen für Gläubiger einzieht, außergerichtlich und vor Gericht. Wir tun das für Unternehmen in Deutschland und Österreich.</p></div>
     <div class="laender-split">
@@ -795,47 +816,13 @@ p.kicker-klein{font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;fo
   </div>
 </section>
 
-<section class="creme abschnitt" id="faelle">
-  <div class="wrap">
-    <div class="kopf2"><div><p class="kicker">Ausgangslage</p><h2>Wann ein Inkassoanwalt hilft: typische Fälle</h2></div><p class="antwort">Ein Inkassoanwalt lohnt sich, sobald Ihr Kunde nach Fälligkeit und Mahnung nicht zahlt oder nicht mehr reagiert.</p></div>
-    <ol class="zitate"><li><span class="zitat-nr">I</span><p>Ein Geschäftskunde zahlt seit Wochen nicht und reagiert nicht auf Ihre Mahnungen.</p></li><li><span class="zitat-nr">II</span><p>Der Kunde behauptet Mängel, um die Zahlung hinauszuzögern.</p></li><li><span class="zitat-nr">III</span><p>Sie haben schon einen Vollstreckungsbescheid oder ein Urteil, aber kein Geld gesehen.</p></li><li><span class="zitat-nr">IV</span><p>Ihr Kunde sitzt in Österreich, und Sie wissen nicht, welches Gericht zuständig ist.</p></li><li><span class="zitat-nr">V</span><p>Die Forderung droht zum Jahresende zu verjähren.</p></li></ol>
-  </div>
-</section>
-
 <section class="weiss abschnitt" id="leistungen">
   <div class="wrap">
-    <div class="kopf2"><div><p class="kicker">Leistungen</p><h2>Leistungen des Inkassoanwalts im Überblick</h2></div><p class="antwort">Wir übernehmen den ganzen Weg von der Prüfung bis zum Geld auf Ihrem Konto. Wählen Sie die Leistung, die zu Ihrer Lage passt. <a href="leistungen.html">Alle Leistungen <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p></div>
-    <div class="mosaik"><a class="kachel" href="/inkasso-unternehmen"><img src="bilder/unterlagen.jpg" alt="Offene Rechnungen auf dem Schreibtisch" width="1800" height="1200" loading="lazy"><span class="kachel-text"><span class="kachel-fuer">Firmenkunde zahlt eine Rechnung nicht</span><strong>Inkasso für Unternehmen</strong></span><figcaption class="ki">Platzhalterbild, KI-generiert</figcaption></a><a class="kachel kachel-gross" href="inkasso-oesterreich.html"><img src="bilder/graz.jpg" alt="Altstadt von Graz" width="1800" height="1200" loading="lazy"><span class="kachel-text"><span class="kachel-fuer">Ihr Kunde sitzt in Österreich</span><strong>Inkasso Österreich</strong></span><figcaption class="ki">Platzhalterbild, KI-generiert</figcaption></a><a class="kachel" href="/mahnverfahren-anwalt"><img src="bilder/besprechung.jpg" alt="Besprechung von Unterlagen" width="1800" height="1200" loading="lazy"><span class="kachel-text"><span class="kachel-fuer">Sie brauchen schnell einen Titel</span><strong>Gerichtliches Mahnverfahren</strong></span><figcaption class="ki">Platzhalterbild, KI-generiert</figcaption></a><a class="kachel" href="/zwangsvollstreckung-glaeubiger"><img src="bilder/justiz.jpg" alt="Treppenhalle eines Justizgebäudes" width="1800" height="1200" loading="lazy"><span class="kachel-text"><span class="kachel-fuer">Sie haben einen Titel, aber kein Geld</span><strong>Zwangsvollstreckung</strong></span><figcaption class="ki">Platzhalterbild, KI-generiert</figcaption></a><a class="kachel" href="/inkasso-berlin"><img src="bilder/berlin.jpg" alt="Straße in Berlin-Charlottenburg" width="1800" height="1200" loading="lazy"><span class="kachel-text"><span class="kachel-fuer">Sie möchten einen persönlichen Termin in Berlin</span><strong>Inkasso Berlin</strong></span><figcaption class="ki">Platzhalterbild, KI-generiert</figcaption></a><a class="kachel kachel-alle" href="leistungen.html"><span class="kachel-text"><span class="kachel-fuer">EU-Ausland, Branchen, Gläubiger aus Österreich</span><strong>Alle Leistungen</strong><span class="kachel-pfeil"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span></a></div>
-  </div>
-</section>
-
-<section class="reise-band" id="ablauf">
-  <div class="wrap">
-    <div class="kopf2 kopf2-hell"><div><p class="kicker">Ablauf und Dauer</p><h2>Ablauf: so arbeitet Ihr Inkassoanwalt</h2></div><p class="antwort">Sie geben die Forderung einmal ab. Alles Weitere läuft digital, ohne Termin in der Kanzlei. Zahlt Ihr Kunde auf das Anwaltsschreiben, ist die Sache oft nach wenigen Wochen erledigt. Mit Mahnverfahren und Vollstreckung sollten Sie mit mehreren Monaten rechnen.</p></div>
-    <ol class="reise"><li><span class="reise-nr">I</span><h3>Anfrage</h3><p>Sie laden Rechnung, Mahnungen und Vertrag im Formular hoch.</p><p class="reise-dauer">Wenige Minuten</p></li><li><span class="reise-nr">II</span><h3>Ersteinschätzung</h3><p>Wir prüfen Forderung und Schuldner, etwa im Handelsregister und auf laufende Insolvenzverfahren. Sie erhalten eine Einschätzung zu Erfolgsaussicht, Weg und Kosten.</p><p class="reise-dauer"><span class="ph">[Reaktionszeit]</span></p></li><li><span class="reise-nr">III</span><h3>Anwaltsschreiben</h3><p>Ihr Kunde erhält eine Zahlungsaufforderung mit Frist. Zahlt er, ist die Sache ohne Gericht erledigt.</p><p class="reise-dauer"><span class="ph">[in der Regel 14 Tage Frist]</span></p></li><li><span class="reise-nr">IV</span><h3>Titel</h3><p>Zahlt er nicht, beantragen wir einen Mahnbescheid oder erheben Klage.</p><p class="reise-dauer">2 Wochen Widerspruchsfrist</p></li><li><span class="reise-nr">V</span><h3>Vollstreckung</h3><p>Mit dem Titel lassen wir pfänden, in Deutschland oder in Österreich. Zahlungen leiten wir an Sie weiter.</p><p class="reise-dauer"><span class="ph">[Dauer nach Erfahrung]</span></p></li></ol>
-    <div class="reise-aktion"><a class="btn btn-primaer" href="inkasso-online-beauftragen.html">Forderung jetzt einreichen <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><span>Sie brauchen: Rechnung, Vertrag oder Auftragsbestätigung, Mahnungen.</span></div>
-  </div>
-</section>
-
-<section class="weiss abschnitt" id="anwalt">
-  <div class="wrap jan-raster">
-    <figure class="jan-bild"><img src="https://inkassoanwalt.net/wp-content/uploads/rechtsanwalt-jan-wasserfall-684x1024.jpg" alt="Rechtsanwalt Jan Waßerfall" width="684" height="1024" loading="lazy"></figure>
-    <div class="jan-text">
-      <p class="kicker">Ihr Anwalt</p>
-      <blockquote class="jan-zitat">Ich vertrete nur die Seite, die auf ihr Geld wartet.</blockquote>
-      <p class="jan-name">Rechtsanwalt Jan Waßerfall</p>
-      <ul class="jan-fakten"><li>Rechtsanwalt seit 2008, Rechtsanwaltskammer Berlin</li><li>Tätig in Deutschland und Österreich</li><li>Auftrag, Unterlagen und Abstimmung vollständig digital</li></ul>
-      <p><a class="textlink" href="jan-wasserfall.html">Mehr über Jan Waßerfall <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
-      <p class="klein-hinweis">Zitat sinngemäß aus der Autorenseite. <span class="ph">[Von Jan freigeben lassen]</span></p>
+    <div class="mosaik mosaik2"><div class="kachel kachel-kopf"><p class="kicker">Leistungen</p><h2>Leistungen des Inkassoanwalts im Überblick</h2><p>Wir übernehmen den ganzen Weg von der Prüfung bis zum Geld auf Ihrem Konto. Wählen Sie die Leistung, die zu Ihrer Lage passt.</p><a class="textlink" href="leistungen.html">Alle Leistungen <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div><a class="kachel" href="/inkasso-unternehmen"><img src="bilder/unterlagen.jpg" alt="Offene Rechnungen auf dem Schreibtisch" width="1800" height="1200" loading="lazy"><span class="kachel-text"><span class="kachel-fuer">Firmenkunde zahlt eine Rechnung nicht</span><strong>Inkasso für Unternehmen</strong></span><figcaption class="ki">Platzhalterbild, KI-generiert</figcaption></a><a class="kachel kachel-gross" href="inkasso-oesterreich.html"><img src="bilder/graz.jpg" alt="Altstadt von Graz" width="1800" height="1200" loading="lazy"><span class="kachel-text"><span class="kachel-fuer">Ihr Kunde sitzt in Österreich</span><strong>Inkasso Österreich</strong></span><figcaption class="ki">Platzhalterbild, KI-generiert</figcaption></a><a class="kachel" href="/mahnverfahren-anwalt"><img src="bilder/besprechung.jpg" alt="Besprechung von Unterlagen" width="1800" height="1200" loading="lazy"><span class="kachel-text"><span class="kachel-fuer">Sie brauchen schnell einen Titel</span><strong>Gerichtliches Mahnverfahren</strong></span><figcaption class="ki">Platzhalterbild, KI-generiert</figcaption></a><a class="kachel" href="/zwangsvollstreckung-glaeubiger"><img src="bilder/justiz.jpg" alt="Treppenhalle eines Justizgebäudes" width="1800" height="1200" loading="lazy"><span class="kachel-text"><span class="kachel-fuer">Sie haben einen Titel, aber kein Geld</span><strong>Zwangsvollstreckung</strong></span><figcaption class="ki">Platzhalterbild, KI-generiert</figcaption></a><a class="kachel" href="/inkasso-berlin"><img src="bilder/berlin.jpg" alt="Straße in Berlin-Charlottenburg" width="1800" height="1200" loading="lazy"><span class="kachel-text"><span class="kachel-fuer">Sie möchten einen persönlichen Termin in Berlin</span><strong>Inkasso Berlin</strong></span><figcaption class="ki">Platzhalterbild, KI-generiert</figcaption></a></div>
+    <div class="faelle-zeile">
+      <h3>Wann ein Inkassoanwalt hilft: typische Fälle</h3>
+      <ol class="zitate"><li><span class="zitat-nr">I</span><p>Ein Geschäftskunde zahlt seit Wochen nicht und reagiert nicht auf Ihre Mahnungen.</p></li><li><span class="zitat-nr">II</span><p>Der Kunde behauptet Mängel, um die Zahlung hinauszuzögern.</p></li><li><span class="zitat-nr">III</span><p>Sie haben schon einen Vollstreckungsbescheid oder ein Urteil, aber kein Geld gesehen.</p></li><li><span class="zitat-nr">IV</span><p>Ihr Kunde sitzt in Österreich, und Sie wissen nicht, welches Gericht zuständig ist.</p></li><li><span class="zitat-nr">V</span><p>Die Forderung droht zum Jahresende zu verjähren.</p></li></ol>
     </div>
-  </div>
-</section>
-
-<section class="creme abschnitt" id="kosten">
-  <div class="wrap">
-    <div class="kopf2"><div><p class="kicker">Kosten</p><h2>Was kostet ein Inkassoanwalt?</h2></div><p class="antwort">Ist Ihr Kunde in Verzug, muss er die notwendigen Anwaltskosten in der Regel als Verzugsschaden ersetzen (§§ 280, 286 BGB). Vorstrecken müssen Sie vor allem Gerichtskosten.</p></div>
-    <div class="betraege"><div class="betrag"><p class="betrag-zahl">500 €</p><dl><div><dt>Anwaltsschreiben</dt><dd><span class="ph">[€ nach RVG]</span></dd></div><div><dt>Mahnverfahren bis Titel</dt><dd><span class="ph">[€]</span></dd></div></dl><p class="betrag-wer">Ihr Kunde, wenn er in Verzug ist</p></div><div class="betrag"><p class="betrag-zahl">2.000 €</p><dl><div><dt>Anwaltsschreiben</dt><dd><span class="ph">[€ nach RVG]</span></dd></div><div><dt>Mahnverfahren bis Titel</dt><dd><span class="ph">[€]</span></dd></div></dl><p class="betrag-wer">Ihr Kunde, wenn er in Verzug ist</p></div><div class="betrag"><p class="betrag-zahl">10.000 €</p><dl><div><dt>Anwaltsschreiben</dt><dd><span class="ph">[€ nach RVG]</span></dd></div><div><dt>Mahnverfahren bis Titel</dt><dd><span class="ph">[€]</span></dd></div></dl><p class="betrag-wer">Ihr Kunde, wenn er in Verzug ist</p></div></div>
-    <div class="kosten-fuss"><p>Die Anwaltsgebühren richten sich nach dem Rechtsanwaltsvergütungsgesetz (RVG) und steigen mit der Höhe der Forderung. Gegenüber Unternehmen stehen Ihnen zusätzlich Verzugszinsen von 9 Prozentpunkten über dem Basiszinssatz und eine Pauschale von 40 € zu (§ 288 Abs. 2 und 5 BGB).</p><p>Ein Risiko bleibt: Ist beim Schuldner nichts zu holen, bleiben die Kosten bei Ihnen. Deshalb prüfen wir den Schuldner vorab und nennen Ihnen vor jedem Schritt die Kosten. Mehr auf der Seite <a href="/kosten">Kosten</a>.</p><p class="klein-hinweis"><span class="ph">[Stand und Berechnungsgrundlage (RVG, GKG) nach Freigabe durch Jan]</span></p></div>
   </div>
 </section>
 
@@ -846,40 +833,56 @@ p.kicker-klein{font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;fo
   </div>
 </section>
 
-<section class="weiss abschnitt" id="vergleich">
+<section class="creme abschnitt" id="kosten">
   <div class="wrap">
-    <div class="kopf2"><div><p class="kicker">Vergleich</p><h2>Inkassoanwalt oder Inkassobüro?</h2></div><p class="antwort">Der Unterschied zeigt sich, wenn Ihr Kunde die Forderung bestreitet: Im streitigen Gerichtsverfahren darf Sie ein Inkassobüro nicht vertreten (§ 79 Abs. 2 ZPO), ein Anwalt schon.</p></div>
-    <div class="tab-wrap"><table class="vergleich"><thead><tr><th scope="col">Frage</th><th scope="col">Inkassoanwalt</th><th scope="col">Inkassobüro</th></tr></thead><tbody><tr><td>Anwaltsschreiben und Mahnverfahren</td><td data-label="Inkassoanwalt"><span class="ja-nein ja">Ja</span></td><td data-label="Inkassobüro"><span class="ja-nein ja">Ja</span></td></tr><tr><td>Vertretung vor Gericht, wenn der Kunde bestreitet</td><td data-label="Inkassoanwalt"><span class="ja-nein ja">Ja</span></td><td data-label="Inkassobüro"><span class="ja-nein nein">Nein</span></td></tr><tr><td>Zwangsvollstreckung in bewegliches Vermögen (Konto, Lohn, Sachen)</td><td data-label="Inkassoanwalt"><span class="ja-nein ja">Ja</span></td><td data-label="Inkassobüro"><span class="ja-nein ja">Ja</span></td></tr><tr><td>Zwangsvollstreckung in Grundstücke</td><td data-label="Inkassoanwalt"><span class="ja-nein ja">Ja</span></td><td data-label="Inkassobüro"><span class="ja-nein nein">Nein</span></td></tr></tbody></table></div>
-    <p class="weitere">Ausführlich: <a href="/ratgeber/anwalt-oder-inkassobuero">Anwalt oder Inkassobüro?</a></p>
+    <div class="mitte-kopf"><p class="kicker">Kosten und Dauer</p><h2>Was kostet ein Inkassoanwalt? Und wie lange dauert es?</h2><p class="antwort">Ist Ihr Kunde in Verzug, muss er die notwendigen Anwaltskosten in der Regel als Verzugsschaden ersetzen (§§ 280, 286 BGB). Vorstrecken müssen Sie vor allem Gerichtskosten.</p></div>
+    <div class="kd-raster">
+      <div class="kd-kosten">
+        <h3>Anwaltskosten nach RVG</h3>
+        <table class="kd-tab"><thead><tr><th scope="col">Forderung</th><th scope="col">Anwaltsschreiben</th><th scope="col">Mahnverfahren bis Titel</th></tr></thead><tbody><tr><th scope="row">500 €</th><td data-label="Anwaltsschreiben"><span class="ph">[€ nach RVG]</span></td><td data-label="Mahnverfahren bis Titel"><span class="ph">[€]</span></td></tr><tr><th scope="row">2.000 €</th><td data-label="Anwaltsschreiben"><span class="ph">[€ nach RVG]</span></td><td data-label="Mahnverfahren bis Titel"><span class="ph">[€]</span></td></tr><tr><th scope="row">10.000 €</th><td data-label="Anwaltsschreiben"><span class="ph">[€ nach RVG]</span></td><td data-label="Mahnverfahren bis Titel"><span class="ph">[€]</span></td></tr></tbody></table>
+        <p class="kd-wer">Am Ende zahlt in der Regel Ihr Kunde, wenn er in Verzug ist.</p>
+        <p class="klein-hinweis"><span class="ph">[Stand und Berechnungsgrundlage (RVG, GKG) nach Freigabe durch Jan]</span> Ein Risiko bleibt: Ist beim Schuldner nichts zu holen, bleiben die Kosten bei Ihnen. Deshalb prüfen wir den Schuldner vorab und nennen Ihnen vor jedem Schritt die Kosten. Mehr auf der Seite <a href="/kosten">Kosten</a>.</p>
+      </div>
+      <div class="kd-dauer">
+        <h3>Wie lange dauert Anwaltsinkasso?</h3>
+        <p>Zahlt Ihr Kunde auf das Anwaltsschreiben, ist die Sache oft nach wenigen Wochen erledigt. Mit Mahnverfahren und Vollstreckung sollten Sie mit mehreren Monaten rechnen.</p>
+        <ul class="kd-liste"><li><span>Zahlungsfrist im Anwaltsschreiben</span><strong><span class="ph">[in der Regel 14 Tage]</span></strong></li><li><span>Widerspruchsfrist gegen den Mahnbescheid</span><strong>2 Wochen ab Zustellung (§ 692 Abs. 1 Nr. 3 ZPO)</strong></li><li><span>Einspruchsfrist gegen den Vollstreckungsbescheid</span><strong>2 Wochen ab Zustellung (§§ 339, 700 ZPO)</strong></li><li><span>Zwangsvollstreckung</span><strong><span class="ph">[Dauer nach Erfahrung]</span></strong></li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="weiss abschnitt" id="vergleich">
+  <div class="wrap seit-raster">
+    <div><p class="kicker">Vergleich</p><h2>Inkassoanwalt oder Inkassobüro?</h2><p class="antwort">Der Unterschied zeigt sich, wenn Ihr Kunde die Forderung bestreitet: Im streitigen Gerichtsverfahren darf Sie ein Inkassobüro nicht vertreten (§ 79 Abs. 2 ZPO), ein Anwalt schon.</p><p class="weitere">Ausführlich: <a href="/ratgeber/anwalt-oder-inkassobuero">Anwalt oder Inkassobüro?</a></p></div>
+    <div class="tab-wrap"><table class="vergleich"><thead><tr><th scope="col">Frage</th><th scope="col">Anwalt</th><th scope="col">Inkassobüro</th></tr></thead><tbody><tr><td>Anwaltsschreiben und Mahnverfahren</td><td data-label="Inkassoanwalt"><span class="ja-nein ja">Ja</span></td><td data-label="Inkassobüro"><span class="ja-nein ja">Ja</span></td></tr><tr><td>Vertretung vor Gericht, wenn der Kunde bestreitet</td><td data-label="Inkassoanwalt"><span class="ja-nein ja">Ja</span></td><td data-label="Inkassobüro"><span class="ja-nein nein">Nein</span></td></tr><tr><td>Zwangsvollstreckung in bewegliches Vermögen (Konto, Lohn, Sachen)</td><td data-label="Inkassoanwalt"><span class="ja-nein ja">Ja</span></td><td data-label="Inkassobüro"><span class="ja-nein ja">Ja</span></td></tr><tr><td>Zwangsvollstreckung in Grundstücke</td><td data-label="Inkassoanwalt"><span class="ja-nein ja">Ja</span></td><td data-label="Inkassobüro"><span class="ja-nein nein">Nein</span></td></tr></tbody></table></div>
   </div>
 </section>
 
 <section class="creme abschnitt" id="beispiele">
   <div class="wrap">
-    <div class="kopf2"><div><p class="kicker">Beispiele aus der Praxis</p><h2>Zwei Fälle, ein Weg zum Geld</h2></div><p class="antwort">Konstruierte Beispiele zur Erläuterung, keine Mandatsfälle.</p></div>
+    <h2 class="leise-h2">Beispiele aus der Praxis</h2>
     <div class="faelle2"><article class="fall2"><p class="fall2-betrag">6.500 €</p><p class="fall2-wer">Handwerksbetrieb</p><p>Ein Elektrobetrieb aus Potsdam wartet seit vier Monaten auf seinen Werklohn. Der Kunde reagiert nicht. Nach dem Anwaltsschreiben verstreicht die Frist. Wir beantragen einen Mahnbescheid, der Kunde widerspricht nicht. Mit dem Vollstreckungsbescheid beauftragen wir den Gerichtsvollzieher.</p></article><article class="fall2"><p class="fall2-betrag">14.000 €</p><p class="fall2-wer">Lieferant, Kunde in Graz</p><p>Ein Großhändler aus Bayern liefert an eine GmbH in Graz. Wir prüfen Firmenbuch und Ediktsdatei, holen in Deutschland einen Titel und beantragen die Exekution auf das Geschäftskonto in Österreich. Der Großhändler hat in beiden Ländern einen Ansprechpartner.</p></article></div>
+    <p class="klein-hinweis">Konstruierte Beispiele zur Erläuterung, keine Mandatsfälle.</p>
   </div>
 </section>
 
-<section class="weiss abschnitt" id="ratgeber">
-  <div class="wrap rat-raster">
-    <a class="rat-haupt" href="ratgeber-wann-verjaehren.html"><figure><img src="bilder/unterlagen.jpg" alt="" width="1800" height="1350" loading="lazy"><figcaption class="ki">Platzhalterbild, KI-generiert</figcaption></figure>
-      <span class="rat-haupt-text"><span class="rubrik">Ratgeber · Verjährung</span><strong>Wann verjähren Rechnungen und Forderungen?</strong><span class="mehr">Weiterlesen <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span></a>
-    <div><p class="kicker">Ratgeber</p><h2>Ratgeber für Gläubiger</h2><ul class="rat-liste"><li><a href="/ratgeber/mahnung-muster">Mahnung Muster: 1. Mahnung, 2. Mahnung, letzte Mahnung <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li><li><a href="/ratgeber/vollstreckungsbescheid">Vollstreckungsbescheid: was Gläubiger danach tun <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li><li><a href="/ratgeber/exekution-oesterreich">Exekution in Österreich für deutsche Gläubiger <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li></ul><p><a class="textlink" href="/ratgeber">Alle Ratgeber <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p></div>
-  </div>
-</section>
-
-<section class="creme abschnitt faq-mittig" id="faq">
-  <div class="wrap faq-raster">
-    <div><p class="kicker">FAQ</p><h2>Häufige Fragen an den Inkassoanwalt</h2><p class="leise">Ihre Frage ist nicht dabei? Rufen Sie an: <a href="tel:+493062930666">+49 (0)30 62 93 06 66</a></p></div>
-    <div class="faq"><details open><summary>Was kostet die Ersteinschätzung?</summary><p><span class="ph">[Antwort nach Freigabe durch Jan]</span></p></details><details><summary>Wer zahlt den Inkassoanwalt?</summary><p>In der Regel Ihr Kunde, wenn er in Verzug ist. Die Anwaltskosten sind dann ein Verzugsschaden. Ist beim Kunden nichts zu holen, tragen Sie die Kosten selbst. Details auf der Seite <a href="/kosten">Kosten</a>.</p></details><details><summary>Ab welcher Forderungshöhe lohnt sich ein Inkassoanwalt?</summary><p>Eine feste Untergrenze gibt es nicht. Entscheidend sind Höhe der Forderung, Zahlungsfähigkeit des Kunden und ob er die Forderung bestreitet. Das klären wir in der Ersteinschätzung.</p></details><details><summary>Wie lange dauert es, bis ich mein Geld bekomme?</summary><p>Zahlt der Kunde auf das Anwaltsschreiben, oft wenige Wochen. Mit Mahnverfahren und Vollstreckung mehrere Monate.</p></details><details><summary>Muss ich in die Kanzlei kommen?</summary><p>Nein. Unterlagen, Vollmacht und Abstimmung laufen digital. Ein Termin in Berlin ist möglich, aber nicht nötig.</p></details><details><summary>Wann verjährt meine Forderung?</summary><p>In der Regel nach drei Jahren, gerechnet ab dem Ende des Jahres, in dem sie entstanden ist (§§ 195, 199 BGB). Eine Mahnung allein hält die Verjährung nicht auf.</p></details><details><summary>Was passiert, wenn mein Kunde insolvent ist?</summary><p>Dann melden wir Ihre Forderung beim Insolvenzverwalter an und prüfen, ob Sie Sicherheiten wie einen Eigentumsvorbehalt haben.</p></details><details><summary>Übernehmen Sie auch Forderungen gegen Kunden in Österreich?</summary><p>Ja. Das ist unser Schwerpunkt. Wir holen den Titel und beantragen die Exekution in Österreich. Mehr auf der Seite <a href="inkasso-oesterreich.html">Inkasso Österreich</a>.</p></details><details><summary>Welche Unterlagen brauchen Sie?</summary><p>Rechnung, Vertrag oder Auftragsbestätigung, Mahnungen und den Schriftverkehr mit dem Kunden. Sie laden alles im Formular hoch.</p></details></div>
+<section class="weiss abschnitt" id="faq">
+  <div class="wrap">
+    <div class="faq-kopf"><h2>Häufige Fragen an den Inkassoanwalt</h2><a class="textlink" href="/faq">Alle Fragen und Antworten <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+    <div class="fa-raster"><div class="fa"><h3>Was kostet die Ersteinschätzung?</h3><p><span class="ph">[Antwort nach Freigabe durch Jan]</span></p></div><div class="fa"><h3>Wer zahlt den Inkassoanwalt?</h3><p>In der Regel Ihr Kunde, wenn er in Verzug ist. Die Anwaltskosten sind dann ein Verzugsschaden. Ist beim Kunden nichts zu holen, tragen Sie die Kosten selbst. Details auf der Seite <a href="/kosten">Kosten</a>.</p></div><div class="fa"><h3>Wie lange dauert es, bis ich mein Geld bekomme?</h3><p>Zahlt der Kunde auf das Anwaltsschreiben, oft wenige Wochen. Mit Mahnverfahren und Vollstreckung mehrere Monate.</p></div><div class="fa"><h3>Muss ich in die Kanzlei kommen?</h3><p>Nein. Unterlagen, Vollmacht und Abstimmung laufen digital. Ein Termin in Berlin ist möglich, aber nicht nötig.</p></div><div class="fa"><h3>Übernehmen Sie auch Forderungen gegen Kunden in Österreich?</h3><p>Ja. Das ist unser Schwerpunkt. Wir holen den Titel und beantragen die Exekution in Österreich. Mehr auf der Seite <a href="inkasso-oesterreich.html">Inkasso Österreich</a>.</p></div></div>
+    <p class="rat-zeile"><strong>Ratgeber für Gläubiger:</strong> <a href="ratgeber-wann-verjaehren.html">Wann verjähren Rechnungen und Forderungen?</a> · <a href="/ratgeber/mahnung-muster">Mahnung Muster: 1. Mahnung, 2. Mahnung, letzte Mahnung</a> · <a href="/ratgeber/vollstreckungsbescheid">Vollstreckungsbescheid: was Gläubiger danach tun</a> · <a href="/ratgeber/exekution-oesterreich">Exekution in Österreich für deutsche Gläubiger</a></p>
   </div>
 </section>
 
 <section class="finale">
-  <div class="wrap finale-raster">
-    <div><p class="kicker">Nächster Schritt</p><h2>Ihre Forderung prüfen lassen</h2><p>Laden Sie Rechnung und Mahnungen hoch. Sie erhalten eine Einschätzung zu Erfolgsaussicht, Weg und Kosten. <span class="ph">[Reaktionszeit]</span></p></div>
-    <div class="finale-aktion"><a class="btn btn-primaer" href="inkasso-online-beauftragen.html">Forderung prüfen lassen <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn btn-hell" href="tel:+493062930666"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg> +49 (0)30 62 93 06 66</a></div>
+  <div class="wrap">
+    <div class="finale-raster">
+      <div><p class="kicker">Nächster Schritt</p><h2>Ihre Forderung prüfen lassen</h2><p>Sie geben die Forderung einmal ab. Alles Weitere läuft digital, ohne Termin in der Kanzlei. <span class="ph">[Reaktionszeit]</span></p></div>
+      <div class="finale-aktion"><a class="btn btn-primaer" href="inkasso-online-beauftragen.html">Forderung prüfen lassen <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn btn-hell" href="tel:+493062930666"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg> +49 (0)30 62 93 06 66</a></div>
+    </div>
+    <h2 class="sr-only">Ablauf: so arbeitet Ihr Inkassoanwalt</h2>
+    <ol class="finale-schritte" aria-label="Ablauf"><li><span>I</span>Anfrage</li><li><span>II</span>Ersteinschätzung</li><li><span>III</span>Anwaltsschreiben</li><li><span>IV</span>Titel</li><li><span>V</span>Vollstreckung</li></ol>
   </div>
 </section>
 </main>
