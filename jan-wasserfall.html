@@ -613,6 +613,110 @@ p.kicker-klein{font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;fo
 .branche-text strong{font-family:var(--serif);font-weight:500;font-size:24px;color:var(--navy)}
 .branche-text>span:not(.ort-land):not(.karte-mehr){font-size:15.5px;line-height:1.6;color:#3d4655;flex:1}
 .cta-band:first-child{padding-top:84px}
+.hero-portrait{background:#fff;padding-bottom:0}
+.hero-portrait .hero-raster{align-items:stretch}@media(min-width:960px){.hero-portrait .hero-raster{grid-template-columns:1fr 1.25fr;gap:80px}}
+.hero-portrait .hero-bild{order:-1;align-self:stretch;background:var(--creme)}
+.hero-portrait .hero-bild:before,.hero-portrait .hero-bild figcaption{display:none}
+.hero-portrait .hero-bild img{height:100%;max-height:none;min-height:520px;object-position:50% 0}
+.hero-portrait .hero-text{padding:24px 0 72px}
+@media(max-width:959px){.hero-portrait .hero-bild{max-width:none;margin:0}.hero-portrait .hero-bild img{min-height:0;max-height:460px}}
+/* Startseite: eigener Aufbau */
+.buehne{background:var(--navy);color:#c8d1de;padding:72px 0 0}
+.buehne-raster{display:grid;gap:48px;align-items:center}@media(min-width:1024px){.buehne-raster{grid-template-columns:1.25fr 1fr;gap:72px}}
+.buehne p.kicker{color:#c9a96e}
+.buehne h1{color:#e6d3ad;font-weight:400;font-size:clamp(24px,2.6vw,34px);line-height:1.25;margin:0 0 28px}
+.buehne h1 .h1-kopf{display:block;color:#fff;font-size:clamp(40px,5.2vw,68px);line-height:1.04;margin-bottom:14px}
+.buehne-lead{font-size:18.5px;line-height:1.7;color:#c8d1de;margin:0 0 32px;max-width:620px}
+.btn-hell{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.4)}.btn-hell:hover{border-color:#fff}
+.buehne .btn-primaer{background:#c9a96e;border-color:#c9a96e;color:var(--navy)}
+.wahl{background:#fff;color:var(--text);padding:28px 30px 22px}
+.wahl-titel{font-family:var(--serif);font-size:24px;color:var(--navy);margin:0 0 10px}
+.wahl-zeile{display:grid;gap:4px;padding:16px 0;border-top:1px solid #e6dfd2;text-decoration:none;color:inherit}
+.wahl-lage{font-size:15px;color:#5f594e}
+.wahl-ziel{display:flex;justify-content:space-between;align-items:center;font-family:var(--serif);font-size:20px;color:var(--navy)}
+.wahl-ziel .ic{width:17px;height:17px;color:var(--gold);transition:transform .2s}.wahl-zeile:hover .wahl-ziel .ic{transform:translateX(4px)}
+.wahl-alle{display:flex;gap:8px;align-items:center;padding-top:16px;border-top:1px solid #e6dfd2;font-size:14px;font-weight:600;color:var(--navy);text-decoration:none}
+.buehne-fuss{display:flex;flex-wrap:wrap;gap:10px 36px;margin-top:64px;padding:22px 32px;border-top:1px solid rgba(255,255,255,.15);font-size:14px;color:#aab6c8}
+.buehne-fuss .ic{width:13px;height:13px}.buehne-fuss span:first-child{color:#fff}
+@media(max-width:767px){.buehne{padding-top:44px}.wahl{padding:22px 18px 16px}.buehne-fuss{padding:18px 16px;margin-top:44px;gap:8px 20px}}
+.laender-kopf{max-width:760px;margin:0 auto 48px;text-align:center}.laender-kopf p.kicker{text-align:center}
+.laender-split{display:grid;gap:28px;align-items:stretch}@media(min-width:900px){.laender-split{grid-template-columns:1fr auto 1fr;gap:0}}
+.land-spalte{padding:8px 0}@media(min-width:900px){.land-spalte:first-child{text-align:right;padding-right:48px}.land-spalte:last-child{padding-left:48px}}
+.land-wort{font-family:var(--serif);font-size:clamp(40px,5vw,68px);line-height:1;color:var(--navy);margin:0 0 12px}
+.land-was{font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-text);font-weight:600;margin:0 0 12px}
+.land-spalte p:last-child{margin:0;font-size:16.5px;line-height:1.7;color:#3d4655}
+@media(min-width:900px){.land-spalte:first-child p:last-child{margin-left:auto;max-width:380px}.land-spalte:last-child p:last-child{max-width:380px}}
+.land-mitte{position:relative;display:flex;align-items:center;justify-content:center;min-width:1px}
+@media(min-width:900px){.land-mitte:before{content:"";position:absolute;top:0;bottom:0;left:50%;width:1px;background:var(--gold)}}
+.land-mitte span{position:relative;background:#fff;padding:8px 12px;font-family:var(--serif);font-style:italic;font-size:17px;color:var(--gold-text)}
+@media(max-width:899px){.land-mitte{justify-content:flex-start}.land-mitte span{padding:0}}
+.laender-text{max-width:760px;margin:48px auto 0;text-align:center;font-size:16.5px;line-height:1.75;color:#3d4655}
+@media(max-width:899px){.laender-kopf,.laender-kopf p.kicker,.laender-text{text-align:left}}
+.zitate{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:0;counter-reset:z}
+@media(min-width:900px){.zitate{grid-template-columns:1fr 1fr;column-gap:64px}}
+.zitate li{display:grid;grid-template-columns:44px 1fr;gap:12px;padding:22px 0;border-top:1px solid #d9d2c5}
+.zitat-nr{font-family:var(--serif);font-style:italic;color:var(--gold);font-size:17px;padding-top:3px}
+.zitate p{margin:0;font-family:var(--serif);font-size:21px;line-height:1.4;color:var(--navy)}
+.mosaik{display:grid;gap:16px}@media(min-width:768px){.mosaik{grid-template-columns:repeat(3,1fr);grid-auto-rows:240px}}
+.kachel{position:relative;display:block;overflow:hidden;min-height:220px;text-decoration:none;color:#fff;background:var(--navy)}
+.kachel img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.8);transition:transform .6s}
+.kachel:hover img{transform:scale(1.04)}
+.kachel:after{content:"";position:absolute;inset:0;background:rgba(13,28,54,.48)}
+.kachel-text{position:absolute;left:24px;right:24px;bottom:22px;z-index:1;display:flex;flex-direction:column;gap:6px}
+.kachel-text strong{font-family:var(--serif);font-weight:400;font-size:26px;line-height:1.15}
+.kachel-fuer{font-size:13.5px;color:#e6d3ad}
+@media(min-width:768px){.kachel-gross{grid-column:2/4;grid-row:span 2}.kachel-gross .kachel-text strong{font-size:38px}}
+.kachel .ki{z-index:2;top:10px;bottom:auto}
+.kachel-alle{background:var(--navy);border:1px solid var(--navy)}.kachel-alle:after{display:none}
+.kachel-alle .kachel-text{top:24px;justify-content:flex-end}.kachel-pfeil .ic{width:22px;height:22px;color:#c9a96e;margin-top:8px}
+.reise-band{background:var(--navy);color:#c8d1de;padding:96px 0}
+.kopf2-hell h2{color:#fff}.kopf2-hell .antwort{color:#c8d1de}.kopf2-hell p.kicker{color:#c9a96e}
+.reise{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:30px}
+@media(min-width:960px){.reise{grid-template-columns:repeat(5,1fr);gap:0}.reise li{padding:0 24px;border-left:1px solid rgba(255,255,255,.16)}.reise li:first-child{padding-left:0;border-left:0}}
+.reise-nr{display:block;font-family:var(--serif);font-style:italic;font-size:30px;color:#c9a96e;margin-bottom:14px}
+.reise h3{color:#fff;font-size:21px;margin:0 0 8px}
+.reise p{margin:0;font-size:15.5px;line-height:1.65;color:#c8d1de}
+.reise p.reise-dauer{margin-top:16px;padding-top:12px;border-top:1px solid rgba(201,169,110,.45);font-family:var(--serif);font-size:17px;color:#fff}
+.reise-aktion{display:flex;flex-wrap:wrap;gap:16px 28px;align-items:center;margin-top:56px;padding-top:32px;border-top:1px solid rgba(255,255,255,.16);font-size:15px}
+.reise-aktion .btn-primaer{background:#c9a96e;border-color:#c9a96e;color:var(--navy)}
+@media(max-width:767px){.reise-band{padding:64px 0}}
+.jan-raster{display:grid;gap:40px;align-items:center}@media(min-width:960px){.jan-raster{grid-template-columns:.8fr 1.2fr;gap:96px}}
+.jan-bild{max-width:420px;margin:0;aspect-ratio:684/860;overflow:hidden}
+.jan-bild img{width:100%;height:100%;object-fit:cover;object-position:50% 0}
+.jan-zitat{margin:0 0 26px;font-family:var(--serif);font-size:clamp(30px,3.6vw,46px);line-height:1.18;color:var(--navy)}
+.jan-zitat:before{content:"„";color:var(--gold)}.jan-zitat:after{content:"“";color:var(--gold)}
+.jan-name{font-family:var(--serif);font-style:italic;font-size:19px;color:var(--gold-text);margin:0 0 22px}
+.jan-fakten{list-style:none;padding:0;margin:0 0 24px;border-top:1px solid #d9d2c5}
+.jan-fakten li{padding:14px 0;border-bottom:1px solid #d9d2c5;font-size:16.5px;color:#2a3240}
+.betraege{display:grid;gap:0;border-top:1px solid var(--navy)}@media(min-width:900px){.betraege{grid-template-columns:repeat(3,1fr)}}
+.betrag{padding:30px 0;border-bottom:1px solid #d9d2c5}@media(min-width:900px){.betrag{padding:34px 32px;border-bottom:0}.betrag:first-child{padding-left:0}.betrag+.betrag{border-left:1px solid #d9d2c5}}
+.betrag-zahl{font-family:var(--serif);font-size:clamp(40px,4.4vw,56px);line-height:1;color:var(--navy);margin:0 0 22px}
+.betrag dl{margin:0 0 18px}.betrag dl div{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-top:1px solid #efe9de;font-size:14.5px}
+.betrag dt{color:#5f594e}.betrag dd{margin:0}
+.betrag-wer{margin:0;font-family:var(--serif);font-style:italic;font-size:17px;color:var(--gold-text)}
+.kosten-fuss{display:grid;gap:8px 64px;margin-top:36px}@media(min-width:900px){.kosten-fuss{grid-template-columns:1fr 1fr}}
+.kosten-fuss p{margin:0;font-size:16px;line-height:1.7;color:#3d4655}.kosten-fuss .klein-hinweis{grid-column:1/-1}
+.faelle2{display:grid;gap:40px}@media(min-width:900px){.faelle2{grid-template-columns:1fr 1fr;gap:72px}}
+.fall2{border-top:1px solid var(--navy);padding-top:26px}
+.fall2-betrag{font-family:var(--serif);font-size:clamp(46px,5vw,64px);line-height:1;color:var(--navy);margin:0 0 10px}
+.fall2-wer{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--gold-text);margin:0 0 14px}
+.fall2 p:last-child{margin:0;font-size:16.5px;line-height:1.75;color:#3d4655}
+.rat-raster{display:grid;gap:40px;align-items:center}@media(min-width:960px){.rat-raster{grid-template-columns:1.2fr 1fr;gap:72px}}
+.rat-haupt{display:block;text-decoration:none;color:inherit;background:#fff;border:1px solid #e6dfd2}
+.rat-haupt figure{aspect-ratio:16/9;overflow:hidden}
+.rat-haupt-text{display:flex;flex-direction:column;gap:10px;padding:26px 30px 30px}
+.rat-haupt-text strong{font-family:var(--serif);font-weight:400;font-size:26px;line-height:1.25;color:var(--navy)}
+.rat-liste{list-style:none;padding:0;margin:8px 0 22px;border-top:1px solid #d9d2c5}
+.rat-liste a{display:flex;justify-content:space-between;gap:16px;align-items:center;padding:18px 0;border-bottom:1px solid #d9d2c5;font-family:var(--serif);font-size:19px;color:var(--navy);text-decoration:none}
+.rat-liste .ic{width:16px;height:16px;flex:none;color:var(--gold)}
+.faq-mittig .faq-raster{display:block;max-width:820px;margin:0 auto}
+.faq-mittig .faq-raster>div:first-child{text-align:center;margin-bottom:36px}.faq-mittig p.kicker{text-align:center}
+.finale{background:var(--navy);padding:88px 0}
+.finale-raster{display:grid;gap:32px;align-items:center}@media(min-width:960px){.finale-raster{grid-template-columns:1.3fr 1fr;gap:72px}}
+.finale h2{color:#fff;font-size:clamp(30px,3.4vw,44px);margin:0 0 12px}.finale p{color:#c8d1de;margin:0;font-size:17px;line-height:1.7}.finale p.kicker{color:#c9a96e;font-size:12.5px;line-height:1.4;margin:0 0 14px}
+.finale-aktion{display:flex;flex-wrap:wrap;gap:14px}@media(min-width:960px){.finale-aktion{justify-content:flex-end}}
+.finale .btn-primaer{background:#c9a96e;border-color:#c9a96e;color:var(--navy)}
+
 .kosten-raster{display:grid;gap:36px;align-items:start}@media(min-width:960px){.kosten-raster{grid-template-columns:1fr 1.6fr;gap:64px}}
 .kostenkarte-breit td:nth-child(2),.kostenkarte-breit td:nth-child(3){white-space:nowrap}
 .kostenkarte-breit td:first-child{width:auto;font-family:var(--serif);font-size:18px}
@@ -651,10 +755,6 @@ p.kicker-klein{font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;fo
     </div>
   </div>
 </section>
-<section class="trust" aria-label="Bewertungen und Auszeichnungen"><div class="wrap trust-raster"><div class="t-item"><div class="t-wert">4,8 <span class="sterne"><svg class="stern" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.5 2.3a.5.5 0 0 1 1 0l2.3 4.7a2 2 0 0 0 1.6 1.2l5.2.7a.5.5 0 0 1 .3.9l-3.8 3.7a2 2 0 0 0-.6 1.9l.9 5.1a.5.5 0 0 1-.8.6l-4.6-2.4a2 2 0 0 0-2 0L6.4 21a.5.5 0 0 1-.8-.6l.9-5.1a2 2 0 0 0-.6-1.9L2.2 9.8a.5.5 0 0 1 .3-.9l5.1-.7a2 2 0 0 0 1.6-1.2z"/></svg><svg class="stern" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.5 2.3a.5.5 0 0 1 1 0l2.3 4.7a2 2 0 0 0 1.6 1.2l5.2.7a.5.5 0 0 1 .3.9l-3.8 3.7a2 2 0 0 0-.6 1.9l.9 5.1a.5.5 0 0 1-.8.6l-4.6-2.4a2 2 0 0 0-2 0L6.4 21a.5.5 0 0 1-.8-.6l.9-5.1a2 2 0 0 0-.6-1.9L2.2 9.8a.5.5 0 0 1 .3-.9l5.1-.7a2 2 0 0 0 1.6-1.2z"/></svg><svg class="stern" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.5 2.3a.5.5 0 0 1 1 0l2.3 4.7a2 2 0 0 0 1.6 1.2l5.2.7a.5.5 0 0 1 .3.9l-3.8 3.7a2 2 0 0 0-.6 1.9l.9 5.1a.5.5 0 0 1-.8.6l-4.6-2.4a2 2 0 0 0-2 0L6.4 21a.5.5 0 0 1-.8-.6l.9-5.1a2 2 0 0 0-.6-1.9L2.2 9.8a.5.5 0 0 1 .3-.9l5.1-.7a2 2 0 0 0 1.6-1.2z"/></svg><svg class="stern" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.5 2.3a.5.5 0 0 1 1 0l2.3 4.7a2 2 0 0 0 1.6 1.2l5.2.7a.5.5 0 0 1 .3.9l-3.8 3.7a2 2 0 0 0-.6 1.9l.9 5.1a.5.5 0 0 1-.8.6l-4.6-2.4a2 2 0 0 0-2 0L6.4 21a.5.5 0 0 1-.8-.6l.9-5.1a2 2 0 0 0-.6-1.9L2.2 9.8a.5.5 0 0 1 .3-.9l5.1-.7a2 2 0 0 0 1.6-1.2z"/></svg><svg class="stern" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.5 2.3a.5.5 0 0 1 1 0l2.3 4.7a2 2 0 0 0 1.6 1.2l5.2.7a.5.5 0 0 1 .3.9l-3.8 3.7a2 2 0 0 0-.6 1.9l.9 5.1a.5.5 0 0 1-.8.6l-4.6-2.4a2 2 0 0 0-2 0L6.4 21a.5.5 0 0 1-.8-.6l.9-5.1a2 2 0 0 0-.6-1.9L2.2 9.8a.5.5 0 0 1 .3-.9l5.1-.7a2 2 0 0 0 1.6-1.2z"/></svg></span></div><div class="t-text">314 Bewertungen auf anwalt.de</div></div>
-<div class="t-item"><div class="t-wert">182</div><div class="t-text">Google-Bewertungen</div></div>
-<div class="t-item"><div class="t-wert">Seit 2008</div><div class="t-text">als Rechtsanwalt zugelassen</div></div>
-<div class="t-item"><div class="t-wert">Top-Anwalt</div><div class="t-text">FAZ 2025 · Focus 2025</div></div></div></section>
 <section class="weiss abschnitt" id="werdegang">
   <div class="wrap zwei-spalten">
     <div class="sticky-kopf"><p class="kicker">Werdegang</p><h2>Werdegang von Rechtsanwalt Jan Waßerfall</h2><p class="antwort">Jan Waßerfall ist seit dem 22.11.2008 als Rechtsanwalt zugelassen und Mitglied der Rechtsanwaltskammer Berlin. Seine Kanzlei liegt am Kaiserdamm 100 in Berlin.</p>
